@@ -26,6 +26,7 @@ config["My tests"] = {
                 "buster",
                 "refute",
                 "assert",
+                "_",
                 "ko",
                 "ReservationsViewModel",
             ]
