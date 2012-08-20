@@ -5,7 +5,8 @@ config["My tests"] = {
     environment: "browser",
     libs: [
         "lib/knockout-2.1.0.js",
-        "lib/jquery-1.8.0.min.js"
+        "lib/jquery-1.8.0.min.js",
+        "lib/underscore-min.js"
     ],
     sources: [
         "src/ViewModel.js"
