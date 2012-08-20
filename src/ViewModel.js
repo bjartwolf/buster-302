@@ -24,8 +24,8 @@ function ReservationsViewModel() {
 
     // Editable data
     self.seats = ko.observableArray([
-        new SeatReservation("Steve", self.availableMeals[0]),
-        new SeatReservation("Bert", self.availableMeals[0])
+        new SeatReservation("Steve", _.first(self.availableMeals)),
+        new SeatReservation("Bert", _.first(self.availableMeals))
     ]);
 
     // Computed data
@@ -38,7 +38,7 @@ function ReservationsViewModel() {
 
     // Operations
     self.addSeat = function () {
-        self.seats.push(new SeatReservation("", self.availableMeals[0]));
+        self.seats.push(new SeatReservation("", _.first(self.availableMeals)));
     };
 
     self.removeSeat = function (seat) {
