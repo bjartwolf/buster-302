@@ -30,12 +30,10 @@ function ReservationsViewModel() {
 
     // Computed data
     self.totalSurcharge = ko.computed(function () {
-        var total = 0,
-            i;
-        for (i = 0; i < self.seats().length; i += 1) {
-            total += self.seats()[i].meal().price;
-        }
-        return total;
+        var sum  = _.reduce(self.seats(), function (sum, reservation) {
+            return sum + reservation.meal().price;
+        }, 0);
+        return sum;
     });
 
     // Operations
