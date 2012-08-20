@@ -1,0 +1,14 @@
+This tutorial is the tutorial from http://learn.knockoutjs.com/#/?tutorial=collections
+with setup and tests from busterjs.org
+
+They require buster, node, npm to be set up on your system
+(You should be able to install buster so you don't have to use sudo)
+Link to buster
+	(sudo) npm link buster
+Install buster lint
+	(sudo) npm install buster-lint
+
+Run tests
+	buster server
+	// Connect browser(s) to localhost:1111
+	buster test
